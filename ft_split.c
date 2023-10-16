@@ -6,7 +6,7 @@
 /*   By: gade-oli <gade-oli@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 10:53:48 by gade-oli          #+#    #+#             */
-/*   Updated: 2022/12/08 03:22:48 by gade-oli         ###   ########.fr       */
+/*   Updated: 2023/10/16 22:38:59 by gade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	count_words(char const *s, char c)
 	return (res);
 }
 
-void	*free_matrix(char **res)
+void	*free_matriz(char **res)
 {
 	int	i;
 
@@ -70,7 +70,7 @@ char	**ft_split(char const *s, char c)
 			i++;
 		res[j] = (char *)malloc(sizeof(char) * (i - flag + 1));
 		if (!res[j])
-			return (free_matrix(res));
+			return (free_matriz(res));
 		ft_strlcpy(res[j], s + flag, i - flag + 1);
 		j++;
 	}

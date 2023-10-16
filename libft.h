@@ -6,7 +6,7 @@
 /*   By: gade-oli <gade-oli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 17:53:27 by gade-oli          #+#    #+#             */
-/*   Updated: 2022/12/09 17:12:48 by gade-oli         ###   ########.fr       */
+/*   Updated: 2023/10/16 22:14:26 by gade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+
+# include <limits.h>
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1024
+# endif
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -67,5 +72,8 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+char	*get_next_line(int fd);
+void	copy_string_from_index(const char *src, char *dst, int i);
 
 #endif

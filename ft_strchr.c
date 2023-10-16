@@ -6,7 +6,7 @@
 /*   By: gade-oli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 17:19:20 by gade-oli          #+#    #+#             */
-/*   Updated: 2022/09/27 18:00:23 by gade-oli         ###   ########.fr       */
+/*   Updated: 2023/10/16 22:32:38 by gade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strchr(const char *s, int c)
 
 	i = 0;
 	found = 0;
+	if (!s)
+		return (NULL);
 	while (!found && s[i])
 	{
 		if (s[i] == (char)c)

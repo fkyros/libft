@@ -1,34 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gade-oli <gade-oli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gade-oli <gade-oli@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/16 12:41:17 by gade-oli          #+#    #+#             */
-/*   Updated: 2023/10/16 22:33:25 by gade-oli         ###   ########.fr       */
+/*   Created: 2023/07/16 23:13:06 by gade-oli          #+#    #+#             */
+/*   Updated: 2023/10/16 22:15:09 by gade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+void	copy_string_from_index(const char *src, char *dst, int i)
 {
-	size_t	i;
+	int	j;
 
-	if (!src)
-		return (0);
-	i = 0;
-	if (dstsize > 0)
+	j = 0;
+	while (src[j])
 	{
-		while (src[i] && i < dstsize - 1)
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
-	}
-	while (src[i])
+		dst[i] = src[j];
+		j++;
 		i++;
-	return (i);
+	}
 }
