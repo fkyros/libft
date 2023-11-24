@@ -22,6 +22,10 @@
 #  define BUFFER_SIZE 1024
 # endif
 
+# ifndef OPEN_MAX
+#  define OPEN_MAX 1024
+# endif
+
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);

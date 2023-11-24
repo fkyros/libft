@@ -6,7 +6,7 @@
 /*   By: gade-oli <gade-oli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 12:41:17 by gade-oli          #+#    #+#             */
-/*   Updated: 2023/10/16 22:33:25 by gade-oli         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:45:50 by gade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	if (!src)
 		return (0);
+	if (!dstsize)
+		dst = NULL;
 	i = 0;
 	if (dstsize > 0)
 	{
