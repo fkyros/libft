@@ -6,7 +6,7 @@
 /*   By: gade-oli <gade-oli@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 00:11:11 by gade-oli          #+#    #+#             */
-/*   Updated: 2022/11/21 00:17:40 by gade-oli         ###   ########.fr       */
+/*   Updated: 2023/11/24 11:01:59 by gade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	{
 		f(i, &s[i]);
 		i++;
-	}	
+	}
 }

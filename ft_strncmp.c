@@ -6,7 +6,7 @@
 /*   By: gade-oli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 13:11:11 by gade-oli          #+#    #+#             */
-/*   Updated: 2023/10/17 21:53:24 by gade-oli         ###   ########.fr       */
+/*   Updated: 2023/11/24 11:02:12 by gade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 }
 
 int	ft_strcmp(const char *s1, const char *s2)
-{	
+{
 	int	i;
 
 	i = 0;
